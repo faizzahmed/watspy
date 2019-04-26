@@ -7,8 +7,8 @@ client = Client(account_sid, auth_token)
  
 message = client.messages.create( 
                               from_='whatsapp:' + secrets.From_Number,  
-                              body='Your appointment is coming up on July 21 at 3PM',      
-                              to='whatsapp:+60176306862' 
+                              body='Your appointment is coming up on July 21 at 3PM',  
+                              to='whatsapp:' + secrets.To_Number 
                           ) 
  
 print(message.sid)
